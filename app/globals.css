@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 15px 20px;
+  background: #4a2c11;
+  box-shadow: 0 2px 4px #0002;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar-brand,
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 60px 20px;
+  background: #e8d8c8;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  color: #3b220c;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.hero p {
+  margin: 0 0 20px;
+}
+
+.student-info {
+  color: #3b220c;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: #4a2c11;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.container-custom-menu {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu h2,
+.faq-title {
+  color: #3b220c;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.custom-card {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+}
+
+.custom-card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.card-info p {
+  min-height: 52px;
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.harga {
+  color: #4a2c11;
+  font-weight: bold;
+}
+
+.btn-like {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-like.liked {
+  border-color: #4a2c11;
+  background: #e8d8c8;
+}
+
+.faq-section {
+  padding: 2rem 5%;
+}
+
+.faq-title {
+  text-align: center;
+}
+
+.container-custom-faq {
+  max-width: 800px;
+  margin: auto;
+}
+
+.custom-accordion-item {
+  margin-bottom: 10px;
+}
+
+.custom-accordion-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #e0e0e0;
+  color: #4a2c11;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.custom-accordion-btn span {
+  margin-left: 12px;
+  font-size: 1.4rem;
+}
+
+.custom-accordion-body {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+}
+
+.footer {
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0 0 5px;
+}
+
+.glowing-text {
+  text-shadow: -1px 0 2px #0ff, 1px 0 2px #f00;
+}
+
+@media (max-width: 700px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+}
